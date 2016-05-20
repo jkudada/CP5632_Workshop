@@ -7,7 +7,8 @@ CP1404/CP5632 Workshop 04
 Basic functions
 demonstrating various parameters, returns and the use of a main function
 """
-__author__ = 'Lindsay Ward'
+#this program returns highest and lowest numbers of a number range.
+__author__ = 'Joe Kudada'
 
 
 def main():
@@ -19,7 +20,7 @@ def main():
 def get_limits():
     minimum = int(input("Enter the minimum: "))
     maximum = int(input("Enter the maximum: "))
-    while minimum > maximum:
+    while minimum > maximum: # Checks to see if the Max is less than Min
         print('Maximum too low!')
         maximum = int(input("Enter the maximum: "))
     return minimum, maximum
